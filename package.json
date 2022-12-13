@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "dev": "pnpm -C play dev"
   },
   "keywords": [],
@@ -12,5 +12,10 @@
   "devDependencies": {
     "typescript": "^4.9.4",
     "vue": "^3.2.45"
+  },
+  "dependencies": {
+    "@r-ui/components": "workspace:^1.0.0",
+    "@r-ui/theme-chalk": "workspace:^1.0.0",
+    "@r-ui/utils": "workspace:^1.0.0"
   }
 }
