@@ -1,16 +1,16 @@
 {
-  "name": "r-ui",
+  "name": "play",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
-    "dev": "pnpm -C play dev"
+  "scripts": {
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.9.4",
-    "vue": "^3.2.45"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.1"
   }
 }
