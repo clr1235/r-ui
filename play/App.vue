@@ -1,7 +1,7 @@
 <template>
     <div>
         测试组件 {{state.num}}
-        <RIcon color="red">哈哈哈</RIcon>
+        <RIcon color="red" class="r-icon-loading3" :size="30">哈哈哈</RIcon>
         <div>
             <button @click="increment">点一下</button>
         </div>
