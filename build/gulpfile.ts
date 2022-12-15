@@ -6,7 +6,7 @@ import {withTaskName, run} from './utils'
 export default series(
     // 打包前先清除dist目录
     withTaskName('clean', async () => {run('rm -rf ./dist')}),
-    withTaskName('build packages', async () => {
+    withTaskName('start build packages', async () => {
         // 并行执行指定目录下的所有的 build命令
         run('pnpm run --filter "./packages/**" --parallel build')
     }),
