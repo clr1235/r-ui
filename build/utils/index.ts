@@ -1,8 +1,9 @@
 // spawn函数会异步地衍生子进程，且不会阻塞 Node.js 事件循环
 import {spawn} from 'child_process'
 import {projectRoot} from './paths'
+import type { TaskFunction } from 'gulp'
 
-export const withTaskName = (name: string, fn: any) => Object.assign(fn, {displayName: name})
+export const withTaskName = <T extends TaskFunction>(name: string, fn: T) => Object.assign(fn, {displayName: name})
 
 // 在node中使用子进程来运行脚本
 /**
